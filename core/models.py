@@ -9,13 +9,13 @@ from django_countries.fields import CountryField
 CATEGORY_CHOICES = (
     ('Sp', 'Smartphone'),
     ('Lp', 'Laptop'),
-    ('OW', 'Other')
+    ('Ta', 'Tablet')
 )
 
 LABEL_CHOICES = (
     ('A', 'Apple'),
     ('S', 'Samsung'),
-    ('O', 'other')
+    ('D', 'Dell')
 )
 
 ADDRESS_CHOICES = (

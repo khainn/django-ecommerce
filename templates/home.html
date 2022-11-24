@@ -30,7 +30,7 @@
                         <a class="nav-link" href="#">Laptop</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Other</a>
+                        <a class="nav-link" href="#">Tablet</a>
                     </li>
 
                 </ul>
@@ -53,25 +53,25 @@
             <div class="row wow fadeIn">
 
                 {% for item in object_list %}
-                <div class="col-lg-3 col-md-6 mb-4">
+                <div class="col-lg-3 col-md-8 mb-3">
 
                     <div class="card">
 
                         <div class="view overlay">
-                            {% comment %} <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top" {% endcomment %} <img src="{{ item.image.url }}" class="card-img-top">
+                            {% comment %} <img class="card-img-top" {% endcomment %} <img src="{{ item.image.url }}" class="card-img-top">
                             <a href="{{ item.get_absolute_url }}">
                                 <div class="mask rgba-white-slight"></div>
                             </a>
                         </div>
 
                         <div class="card-body text-center">
-                            <a href="" class="grey-text">
-                                <h5>{{ item.get_category_display }}</h5>
-                            </a>
+                            <!-- <a href="" class="grey-text">
+                                <h5>{{ item.get_label_display }}</h5>
+                            </a> -->
                             <h5>
                                 <strong>
                     <a href="{{ item.get_absolute_url }}" class="dark-grey-text">{{ item.title }}
-                      <span class="badge badge-pill {{ item.get_label_display }}-color">NEW</span>
+                      <span class="badge badge-pill danger-color">NEW</span>
                     </a>
                   </strong>
                             </h5>
